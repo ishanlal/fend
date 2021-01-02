@@ -2,10 +2,10 @@
  *
  * CSS written based on SMACSS architecture.
  * To learn more, visit: http://smacss.com/
- * 
- * For simplicity, no reset or normalize is added. 
- * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
  *
+ * For simplicity, no reset or normalize is added.
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *222
 */
 
 
@@ -108,6 +108,27 @@ section {
     color: #fff;
 }
 
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1em;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 1em;
+  z-index: 99;
+}
+
+#topButton:hover {
+  background-color: #555;
+}
+
+
+
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
@@ -126,7 +147,7 @@ section {
 section:nth-of-type(even) .landing__container {
     margin-right: 0;
     margin-left: auto;
-    text-align: right; 
+    text-align: right;
 }
 
 /* Background Circles */
@@ -217,7 +238,7 @@ section.your-active-class .landing__container::after {
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(-1em) 
+		           translate(-1em)
 		           rotate(-360deg);
 	}
 }
