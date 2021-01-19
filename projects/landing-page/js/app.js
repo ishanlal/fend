@@ -42,10 +42,13 @@ function scrollToTop() {
 function setActiveSection() {
   for (const section of sections) {
     const position = section.getBoundingClientRect();
+    let anc = document.querySelector('a[href="#'+section.getAttribute('id')+'"]');
     if (position.top <= 50 && position.bottom >= 50) {
       section.classList.add('your-active-class');
+      anc.classList.add('active');
     } else {
       section.classList.remove('your-active-class');
+      anc.classList.remove('active');
     };
   };
 }
