@@ -4,7 +4,7 @@ import { handleSubmit } from "../src/client/js/formHandler"
 // A test suite may contain one or more related tests
 describe("Testing the submit functionality", () => {
     test("Testing the handleSubmit() function", () => {
-           expect(handleSubmit).toBeDefined();
+           let click = new Event('click');
+           expect.objectContaining(click);
 })
-
 });
